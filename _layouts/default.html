@@ -1,0 +1,40 @@
+---
+navigation: 
+  - text: Birth to 3 years
+    url: /birth-three-years/
+  - text: Kindergarten
+    url: /kindergarten/
+  - text: First Grade
+    url: /first-grade/        
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+  {% include head.html %}
+
+<body>
+
+  {% include header.html %}
+<!--
+  {% assign url = page.url|remove:'.html' %}
+
+    <nav class="secondary-nav">
+      <div class="secondary-nav__inner">
+      <input class="second-state" type="checkbox" name="second-nav-state" id="secondary-nav--toggle" autocomplete="off">
+      <h2><a href="{{ site.baseurl }}">Early Admission</a></h2>
+      <label class="secondary-nav__inner--toggle-btn" tabindex="0" for="secondary-nav--toggle"><span class="secondary-nav__inner--hidden">Secondary Navigation</span></label>
+        <ul class="secondary-nav__collapsable">
+        {% for link in layout.navigation %} 
+          <li><a href="/early-admission{{ link.url }}" {% if url == link.url %}class="secondary-nav__active-page-link"{% endif %}>{{ link.text }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </nav>
+-->
+    {{ content }}
+
+  {% include footer.html %}
+
+</body>
+</html>

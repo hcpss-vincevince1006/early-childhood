@@ -1,0 +1,7 @@
+# Site settings
+
+baseurl: "/early-childhood/" 
+
+# Build settings
+markdown: kramdown
+exclude: [Guardfile]
